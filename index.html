@@ -31,20 +31,10 @@
       justify-content: center;
       font-size: 40px;
     }
-    h1 {
-      color: #1A1A1A;
-      font-size: 28px;
-      font-weight: 700;
-      margin-bottom: 8px;
-    }
-    p {
-      color: #6B6760;
-      font-size: 16px;
-      margin-bottom: 40px;
-    }
+    h1 { color: #1A1A1A; font-size: 28px; font-weight: 700; margin-bottom: 8px; }
+    .sub { color: #6B6760; font-size: 16px; margin-bottom: 40px; }
     .spinner {
-      width: 40px;
-      height: 40px;
+      width: 40px; height: 40px;
       border: 3px solid #E8E3DA;
       border-top-color: #C9A84C;
       border-radius: 50%;
@@ -59,26 +49,38 @@
   <div class="container">
     <div class="logo">🕌</div>
     <h1>Juma App</h1>
-    <p>Попутчики на Джума-намаз</p>
+    <p class="sub">Попутчики на Джума-намаз</p>
     <div class="spinner"></div>
-    <p class="status">Выполняем вход...</p>
+    <p class="status" id="status">Выполняем вход...</p>
   </div>
 
   <script>
-    // Получаем токены из URL hash и передаём обратно в приложение
+    // Получаем параметры из URL (hash или query)
     const hash = window.location.hash.substring(1);
-    const params = new URLSearchParams(hash);
+    const query = window.location.search.substring(1);
+    const params = new URLSearchParams(hash || query);
+    
     const accessToken = params.get('access_token');
-    const refreshToken = params.get('refresh_token');
+    const refreshToken = params.get('refresh_token') || '';
+    const expiresAt = params.get('expires_at') || '';
+    const tokenType = params.get('token_type') || 'bearer';
 
     if (accessToken) {
-      // Редирект обратно в приложение
-      const deepLink = `exp+juma-app://expo-development-client/?url=http%3A%2F%2F192.168.10.9%3A8081#access_token=${accessToken}&refresh_token=${refreshToken || ''}&token_type=bearer`;
+      document.getElementById('status').textContent = 'Открываем приложение...';
+      
+      // Deep link для продакшн сборки
+      const deepLink = `jumaapp://auth/callback#access_token=${accessToken}&refresh_token=${refreshToken}&expires_at=${expiresAt}&token_type=${tokenType}`;
+      
+      // Пробуем открыть приложение
       window.location.href = deepLink;
+      
+      // Fallback — если не открылось через 2 секунды
+      setTimeout(() => {
+        document.getElementById('status').textContent = 'Откройте приложение Juma App вручную';
+      }, 2000);
     } else {
-      document.querySelector('.status').textContent = 'Ожидание авторизации...';
+      document.getElementById('status').textContent = 'Ожидание авторизации...';
     }
   </script>
 </body>
 </html>
-
