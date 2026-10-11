@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Политика конфиденциальности — Juma App</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+  <nav><a href="/">Juma App</a><a href="privacy.html">Политика конфиденциальности</a><a href="delete-account.html">Удаление аккаунта</a></nav>
+
+  <h1>Политика конфиденциальности</h1>
+  <p class="muted">Приложение Juma App (com.jumaapp.namaz). Действует с 11 октября 2026 г.</p>
+  <div class="lang"><a href="#ru">Русский</a><a href="#en">English</a></div>
+
+  <section id="ru">
+  <p>Мы собираем только то, что нужно для работы функций приложения. Мы не продаём данные, не показываем рекламу и не подключаем рекламную или аналитическую слежку.</p>
+
+  <h2>1. Без входа в аккаунт</h2>
+  <p>Время намаза, азан, Кибла, Коран, зикры, дуа, халяль и пятничный раздел работают без регистрации.</p>
+
+  <h3>Местоположение</h3>
+  <ul>
+    <li>Нужно для расчёта времени намаза, направления Киблы, ближайших мечетей и халяль-мест. Можно не давать доступ и выбрать город вручную.</li>
+    <li>Координаты хранятся на телефоне. Для расчёта и определения названия города они отправляются в сервисы: Духовного управления мусульман Казахстана (api.muftyat.kz), муфтията Кыргызстана (muftiyat.kg), AlAdhan (api.aladhan.com), Google Maps Geocoding, OpenStreetMap (Nominatim, Overpass). Эти сервисы получают координаты без вашего имени.</li>
+    <li>Раз в сутки приложение может в фоне обновить расписание уведомлений по текущему месту. Постоянного отслеживания нет, история перемещений не сохраняется.</li>
+  </ul>
+
+  <h3>Уведомления</h3>
+  <p>Уведомления о намазе и азан планируются на самом телефоне и не требуют отправки данных на сервер.</p>
+
+  <h3>Камера</h3>
+  <p>Камера используется только для сканирования штрих-кода продукта в разделе «Халяль». Фото не сохраняются и не отправляются. На сервер отправляется только номер штрих-кода, чтобы найти продукт в базе.</p>
+
+  <h3>Халяль</h3>
+  <p>Если вы сами добавляете продукт, место, голос «халяль/харам» или сообщение об ошибке, эти данные (название, состав, штрих-код, координаты места, текст сообщения) сохраняются в нашей базе и видны другим пользователям, кроме сообщений об ошибках. Новые продукты и сообщения передаются администраторам на проверку (уведомление в Telegram). Ваше имя к ним не привязывается.</p>
+
+  <h3>Коран</h3>
+  <p>Текст, переводы, тафсир и аудио загружаются с сервисов quran.com, alquran.cloud, everyayah.com, quranenc.com и islamic.network. Им передаётся только номер суры или аята. Загруженное кэшируется на телефоне.</p>
+
+  <h3>Данные на телефоне</h3>
+  <p>Настройки, язык, тема, избранное и кэш хранятся только на телефоне и удаляются вместе с приложением.</p>
+
+  <h2>2. Раздел «Найти попутчика»</h2>
+  <p>Раздел помогает добраться до мечети на пятничную молитву: водители предлагают места, пассажиры ищут машину. Пользоваться разделом можно только после входа через Google. Перед публикацией поездки или запросом выполняется невидимая проверка от ботов Cloudflare Turnstile.</p>
+
+  <h3>Какие данные мы храним</h3>
+  <ul>
+    <li><b>Профиль:</b> имя, адрес электронной почты из аккаунта Google, рейтинг, марка, цвет и номер машины (если вы водитель), токен для push-уведомлений.</li>
+    <li><b>Пол</b> — если вы его указали. Он нужен только для фильтра «Только с попутчиками моего пола». Другим пользователям пол не показывается. Указать пол можно один раз; изменить — только через поддержку.</li>
+    <li><b>Публикации о поездке:</b> мечеть, время выезда или готовности, количество мест или пассажиров, точка встречи на карте и примерный район, признак «только мой пол».</li>
+    <li><b>Запросы и договорённости:</b> кто к кому обратился, статус, подтверждение «Всё в силе?».</li>
+    <li><b>Местоположение во время поездки:</b> только когда поездка согласована и у вас открыт экран поездки — примерно раз в 20 секунд. Его видит только второй участник поездки.</li>
+    <li><b>Сообщения в чате поездки</b> между водителем и пассажиром.</li>
+    <li><b>Жалобы и сигналы SOS</b>, блокировки других пользователей, действия администраторов по жалобам.</li>
+  </ul>
+
+  <h3>Кто что видит</h3>
+  <ul>
+    <li>В списке поиска другие пользователи видят ваше имя (без фамилии), рейтинг, мечеть, район, время и примерный крюк. Точная точка встречи, машина и номер видны только второму участнику и только после того, как вы договорились.</li>
+    <li>Пол не показывается никому, кроме администраторов при разборе обращения.</li>
+    <li>Жалобы, прикреплённые к ним сообщения чата и сигналы SOS видят только администраторы.</li>
+  </ul>
+
+  <h3>Сколько храним</h3>
+  <ul>
+    <li>Местоположение во время поездки удаляется, как только поездка закрыта, и в любом случае не позже чем через 24 часа.</li>
+    <li>Через 24 часа после окончания поездки точная точка встречи заменяется координатами мечети. Публикации и договорённости удаляются через 90 дней.</li>
+    <li>Сообщения чата удаляются через 24 часа после закрытия чата. Если по поездке подана жалоба — хранятся до решения по ней и ещё 24 часа.</li>
+    <li>Жалобы и журнал действий администраторов хранятся 1 год.</li>
+    <li>Очередь push-уведомлений — 30 дней.</li>
+    <li>Пол и профиль хранятся, пока существует аккаунт.</li>
+  </ul>
+
+  <h2>3. Где хранятся данные</h2>
+  <p>Наша база данных и серверные функции работают на платформе Supabase. Push-уведомления доставляются через Firebase Cloud Messaging (Google). Карты в разделе попутчиков показываются через Google Maps. Данные передаются по защищённому соединению (HTTPS).</p>
+
+  <h2>4. Удаление данных</h2>
+  <p>«Найти попутчика» → профиль → «Удалить мой аккаунт попутчика», или письмо на почту поддержки. Подробно — на странице <a href="delete-account.html">Удаление аккаунта</a>.</p>
+
+  <h2>5. Изменения и контакты</h2>
+  <p>При изменении политики мы обновим эту страницу и дату вверху. Вопросы: <a href="mailto:islamsunnakoran@gmail.com">islamsunnakoran@gmail.com</a>.</p>
+  </section>
+
+  <hr>
+
+  <section id="en">
+  <h1>Privacy Policy</h1>
+  <p class="muted">Juma App (com.jumaapp.namaz). Effective 11 October 2026.</p>
+  <p>We collect only what is needed for the app's features to work. We do not sell data, show ads or use advertising or analytics tracking.</p>
+
+  <h2>1. Without an account</h2>
+  <p>Prayer times, adhan, Qibla, Quran, dhikr, duas, halal and the Friday section work without signing in.</p>
+  <h3>Location</h3>
+  <ul>
+    <li>Used to calculate prayer times, the Qibla direction, and to find nearby mosques and halal places. You can decline and choose a city manually.</li>
+    <li>Coordinates are stored on the phone. To calculate times and determine the city name they are sent to: the Spiritual Administration of Muslims of Kazakhstan (api.muftyat.kz), the Muftiate of Kyrgyzstan (muftiyat.kg), AlAdhan (api.aladhan.com), Google Maps Geocoding and OpenStreetMap (Nominatim, Overpass). These services receive coordinates without your name.</li>
+    <li>Once a day the app may refresh the notification schedule in the background for your current location. There is no continuous tracking and no location history is kept.</li>
+  </ul>
+  <h3>Notifications</h3>
+  <p>Prayer notifications and the adhan are scheduled on the phone itself and do not require sending data to a server.</p>
+  <h3>Camera</h3>
+  <p>The camera is used only to scan a product barcode in the Halal section. Images are not saved or sent. Only the barcode number is sent to our server to look the product up.</p>
+  <h3>Halal</h3>
+  <p>If you add a product, a place, a halal/haram vote or an error report, that data (name, ingredients, barcode, place coordinates, report text) is stored in our database and is visible to other users, except error reports. New products and reports are forwarded to administrators for review (a Telegram notification). Your name is not attached to it.</p>
+  <h3>Quran</h3>
+  <p>Text, translations, tafsir and audio are loaded from quran.com, alquran.cloud, everyayah.com, quranenc.com and islamic.network. Only the surah or ayah number is sent to them. Downloaded content is cached on the phone.</p>
+  <h3>Data on the phone</h3>
+  <p>Settings, language, theme, favourites and cache are stored only on the phone and are removed when you uninstall the app.</p>
+
+  <h2>2. "Find a ride" section</h2>
+  <p>This section helps people get to the mosque for Friday prayer: drivers offer seats, passengers look for a car. It requires signing in with Google. Before publishing a ride or sending a request, an invisible Cloudflare Turnstile bot check is performed.</p>
+  <h3>What we store</h3>
+  <ul>
+    <li><b>Profile:</b> name, email address from your Google account, rating, car make, colour and plate number (if you are a driver), a push-notification token.</li>
+    <li><b>Gender</b>, if you choose to provide it. It is used only for the "Only travellers of my gender" filter and is never shown to other users. It can be set once; it can only be changed through support.</li>
+    <li><b>Ride posts:</b> mosque, departure or ready time, number of seats or passengers, meeting point on the map and an approximate area, and the "only my gender" setting.</li>
+    <li><b>Requests and agreements:</b> who asked whom, status, and the "Still on?" confirmation.</li>
+    <li><b>Location during a ride:</b> only when a ride is agreed and the ride screen is open, about every 20 seconds. Only the other participant of the ride can see it.</li>
+    <li><b>Ride chat messages</b> between the driver and the passenger.</li>
+    <li><b>Reports and SOS alerts</b>, blocks of other users, and administrators' actions on reports.</li>
+  </ul>
+  <h3>Who sees what</h3>
+  <ul>
+    <li>In search results other users see your first name, rating, mosque, area, time and an approximate detour. The exact meeting point, car and plate number are visible only to the other participant and only after you have agreed on the ride.</li>
+    <li>Your gender is not shown to anyone except administrators handling a support request.</li>
+    <li>Reports, chat messages attached to them and SOS alerts are visible only to administrators.</li>
+  </ul>
+  <h3>How long we keep it</h3>
+  <ul>
+    <li>Location during a ride is deleted as soon as the ride is closed, and in any case within 24 hours.</li>
+    <li>24 hours after a ride ends, the exact meeting point is replaced with the mosque's coordinates. Ride posts and agreements are deleted after 90 days.</li>
+    <li>Chat messages are deleted 24 hours after the chat closes. If a report is filed about the ride, they are kept until the report is resolved and for 24 hours after that.</li>
+    <li>Reports and the administrators' action log are kept for 1 year.</li>
+    <li>The push-notification queue is kept for 30 days.</li>
+    <li>Gender and profile data are kept while the account exists.</li>
+  </ul>
+
+  <h2>3. Where data is stored</h2>
+  <p>Our database and server functions run on Supabase. Push notifications are delivered via Firebase Cloud Messaging (Google). Maps in the ride section are shown with Google Maps. Data is transmitted over a secure connection (HTTPS).</p>
+  <h2>4. Deleting your data</h2>
+  <p>"Find a ride" → profile → "Delete my carpool account", or email support. Details: <a href="delete-account.html#en">Delete your account</a>.</p>
+  <h2>5. Changes and contact</h2>
+  <p>If this policy changes, we will update this page and the date above. Questions: <a href="mailto:islamsunnakoran@gmail.com">islamsunnakoran@gmail.com</a>.</p>
+  </section>
+</main>
+</body>
+</html>
