@@ -11,11 +11,11 @@
   <nav><a href="/">Juma App</a><a href="privacy.html">Политика конфиденциальности</a><a href="delete-account.html">Удаление аккаунта</a></nav>
 
   <h1>Политика конфиденциальности</h1>
-  <p class="muted">Приложение Juma App (com.jumaapp.namaz). Действует с 11 октября 2026 г.</p>
+  <p class="muted">Приложение Juma App (com.jumaapp.namaz). Действует с 15 октября 2026 г.</p>
   <div class="lang"><a href="#ru">Русский</a><a href="#en">English</a></div>
 
   <section id="ru">
-  <p>Мы собираем только то, что нужно для работы функций приложения. Мы не продаём данные, не показываем рекламу и не подключаем рекламную или аналитическую слежку.</p>
+  <p>Мы собираем только то, что нужно для работы функций приложения. Мы не продаём данные, не показываем рекламу и не подключаем рекламную или аналитическую слежку. Анонимные отчёты об ошибках описаны ниже.</p>
 
   <h2>1. Без входа в аккаунт</h2>
   <p>Время намаза, азан, Кибла, Коран, зикры, дуа, халяль и пятничный раздел работают без регистрации.</p>
@@ -26,6 +26,15 @@
     <li>Координаты хранятся на телефоне. Для расчёта и определения названия города они отправляются в сервисы: Духовного управления мусульман Казахстана (api.muftyat.kz), муфтията Кыргызстана (muftiyat.kg), AlAdhan (api.aladhan.com), Google Maps Geocoding, OpenStreetMap (Nominatim, Overpass). Эти сервисы получают координаты без вашего имени.</li>
     <li>Раз в сутки приложение может в фоне обновить расписание уведомлений по текущему месту. Постоянного отслеживания нет, история перемещений не сохраняется.</li>
   </ul>
+
+  <h3>Мечети рядом</h3>
+  <p>В разделе «Жума» приложение показывает ближайшие мечети. Для этого телефон сам, без нашего сервера, отправляет в OpenStreetMap (сервер overpass-api.de, а если он недоступен — резервный сервер overpass.private.coffee) координаты, округлённые примерно до 100 метров. Ничего не сохраняется. Кнопка «В путь» открывает Google Maps или 2ГИС на вашем телефоне, «Поделиться» — стандартное меню отправки; эти действия выполняете вы сами.</p>
+
+  <h3>Анонимные отчёты об ошибках</h3>
+  <p>Чтобы быстрее находить и исправлять сбои, приложение отправляет анонимные отчёты об ошибках через Firebase Crashlytics (Google): когда приложение аварийно закрывается или не срабатывает важная функция (например, не загрузилось время намаза или не запланировался азан). В отчёт входят: модель телефона, версия Android и приложения, случайный номер установки и короткое техническое описание ошибки. Координаты, имя, почта и ваши тексты в отчёты не попадают. Отчёты можно отключить: «Ещё → Параметры → О приложении → Отправлять анонимные отчёты об ошибках».</p>
+
+  <h3>Язык</h3>
+  <p>При первом запуске язык приложения выбирается по языку и региону, указанным в настройках телефона. Это определяется на самом телефоне и никуда не отправляется.</p>
 
   <h3>Уведомления</h3>
   <p>Уведомления о намазе и азан планируются на самом телефоне и не требуют отправки данных на сервер.</p>
@@ -43,6 +52,7 @@
   <p>Настройки, язык, тема, избранное и кэш хранятся только на телефоне и удаляются вместе с приложением.</p>
 
   <h2>2. Раздел «Найти попутчика»</h2>
+  <p class="muted"><b>Сейчас раздел недоступен ни в одной стране</b> и будет открываться постепенно, по мере проверки требований законов о персональных данных в каждой стране. Пока раздел закрыт, перечисленные ниже данные не собираются.</p>
   <p>Раздел помогает добраться до мечети на пятничную молитву: водители предлагают места, пассажиры ищут машину. Пользоваться разделом можно только после входа через Google. Перед публикацией поездки или запросом выполняется невидимая проверка от ботов Cloudflare Turnstile.</p>
 
   <h3>Какие данные мы храним</h3>
@@ -80,15 +90,15 @@
   <p>«Найти попутчика» → профиль → «Удалить мой аккаунт попутчика», или письмо на почту поддержки. Подробно — на странице <a href="delete-account.html">Удаление аккаунта</a>.</p>
 
   <h2>5. Изменения и контакты</h2>
-  <p>При изменении политики мы обновим эту страницу и дату вверху. Вопросы: <a href="mailto:islamsunnakoran@gmail.com">islamsunnakoran@gmail.com</a>.</p>
+  <p>При изменении политики мы обновим эту страницу и дату вверху. Вопросы: <a href="mailto:support@juma-app.com">support@juma-app.com</a>.</p>
   </section>
 
   <hr>
 
   <section id="en">
   <h1>Privacy Policy</h1>
-  <p class="muted">Juma App (com.jumaapp.namaz). Effective 11 October 2026.</p>
-  <p>We collect only what is needed for the app's features to work. We do not sell data, show ads or use advertising or analytics tracking.</p>
+  <p class="muted">Juma App (com.jumaapp.namaz). Effective 15 October 2026.</p>
+  <p>We collect only what is needed for the app's features to work. We do not sell data, show ads or use advertising or analytics tracking. Anonymous error reports are described below.</p>
 
   <h2>1. Without an account</h2>
   <p>Prayer times, adhan, Qibla, Quran, dhikr, duas, halal and the Friday section work without signing in.</p>
@@ -98,6 +108,12 @@
     <li>Coordinates are stored on the phone. To calculate times and determine the city name they are sent to: the Spiritual Administration of Muslims of Kazakhstan (api.muftyat.kz), the Muftiate of Kyrgyzstan (muftiyat.kg), AlAdhan (api.aladhan.com), Google Maps Geocoding and OpenStreetMap (Nominatim, Overpass). These services receive coordinates without your name.</li>
     <li>Once a day the app may refresh the notification schedule in the background for your current location. There is no continuous tracking and no location history is kept.</li>
   </ul>
+  <h3>Mosques nearby</h3>
+  <p>In the Juma section the app shows nearby mosques. To do this the phone itself, without our server, sends coordinates rounded to about 100 metres to OpenStreetMap (overpass-api.de, or the backup server overpass.private.coffee if the first is unavailable). Nothing is stored. "Directions" opens Google Maps or 2GIS on your phone and "Share" opens the standard share menu; you perform these actions yourself.</p>
+  <h3>Anonymous error reports</h3>
+  <p>To find and fix problems faster, the app sends anonymous error reports via Firebase Crashlytics (Google) when the app crashes or an important feature fails (for example, prayer times could not be loaded or the adhan could not be scheduled). A report contains the phone model, Android and app version, a random installation ID and a short technical description of the error. Location, name, email and your texts are never included. You can turn reports off: More → Settings → About → Send anonymous error reports.</p>
+  <h3>Language</h3>
+  <p>On first launch the app language is chosen from the language and region set on your phone. This is determined on the phone and is not sent anywhere.</p>
   <h3>Notifications</h3>
   <p>Prayer notifications and the adhan are scheduled on the phone itself and do not require sending data to a server.</p>
   <h3>Camera</h3>
@@ -110,6 +126,7 @@
   <p>Settings, language, theme, favourites and cache are stored only on the phone and are removed when you uninstall the app.</p>
 
   <h2>2. "Find a ride" section</h2>
+  <p class="muted"><b>This section is currently not available in any country</b> and will be opened gradually as personal-data law requirements are checked in each country. While it is closed, the data listed below is not collected.</p>
   <p>This section helps people get to the mosque for Friday prayer: drivers offer seats, passengers look for a car. It requires signing in with Google. Before publishing a ride or sending a request, an invisible Cloudflare Turnstile bot check is performed.</p>
   <h3>What we store</h3>
   <ul>
@@ -142,7 +159,7 @@
   <h2>4. Deleting your data</h2>
   <p>"Find a ride" → profile → "Delete my carpool account", or email support. Details: <a href="delete-account.html#en">Delete your account</a>.</p>
   <h2>5. Changes and contact</h2>
-  <p>If this policy changes, we will update this page and the date above. Questions: <a href="mailto:islamsunnakoran@gmail.com">islamsunnakoran@gmail.com</a>.</p>
+  <p>If this policy changes, we will update this page and the date above. Questions: <a href="mailto:support@juma-app.com">support@juma-app.com</a>.</p>
   </section>
 </main>
 </body>
