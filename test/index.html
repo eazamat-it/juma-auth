@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Станьте тестировщиком — Juma App</title>
+<meta name="description" content="Три шага, чтобы стать тестировщиком Juma App — приложения для мусульман.">
+<style>
+  :root{
+    --bg:#f4f1ea; --card:#ffffff; --text:#1b2333; --muted:#5b6475;
+    --accent:#14284b; --gold:#c9a24a; --warn-bg:#fff6e0; --warn:#7a5a00;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--text);
+    font-family:-apple-system,"Segoe UI",Roboto,Arial,sans-serif;line-height:1.5}
+  header{background:var(--accent);color:#fff;padding:14px 16px;display:flex;
+    justify-content:space-between;align-items:center;gap:12px}
+  header a{color:#fff;text-decoration:none;font-weight:700;font-size:18px}
+  .lang{display:flex;gap:6px}
+  .lang button{background:transparent;color:#fff;border:1px solid rgba(255,255,255,.5);
+    border-radius:20px;padding:6px 12px;font-size:14px;cursor:pointer}
+  .lang button.on{background:var(--gold);border-color:var(--gold);color:var(--accent);font-weight:700}
+  main{max-width:560px;margin:0 auto;padding:20px 16px 40px}
+  h1{font-size:24px;margin:8px 0 6px;line-height:1.25}
+  .lead{color:var(--muted);margin:0 0 20px}
+  .step{background:var(--card);border-radius:16px;padding:16px;margin-bottom:14px;
+    box-shadow:0 1px 3px rgba(0,0,0,.08)}
+  .step h2{font-size:18px;margin:0 0 4px;display:flex;align-items:center;gap:10px}
+  .num{flex:none;width:32px;height:32px;border-radius:50%;background:var(--gold);
+    color:var(--accent);display:flex;align-items:center;justify-content:center;font-weight:800}
+  .step p{margin:0 0 12px;color:var(--muted);font-size:15px}
+  .btn{display:block;text-align:center;background:var(--accent);color:#fff;text-decoration:none;
+    font-size:18px;font-weight:700;padding:16px;border-radius:12px}
+  .btn:active{opacity:.85}
+  .warn{background:var(--warn-bg);color:var(--warn);border-radius:12px;padding:12px 14px;
+    margin:18px 0;font-size:15px}
+  .warn p{margin:4px 0}
+  .hadith{border-left:4px solid var(--gold);padding:4px 0 4px 12px;margin:20px 0;
+    color:var(--text);font-style:italic}
+  footer{text-align:center;color:var(--muted);font-size:14px;margin-top:24px}
+  footer a{color:var(--accent)}
+  [data-l]{display:none}
+  body.ru [data-l="ru"], body.kk [data-l="kk"]{display:revert}
+</style>
+</head>
+<body class="ru">
+<header>
+  <a href="https://juma-app.com/">Juma App</a>
+  <div class="lang">
+    <button id="b-ru" class="on" onclick="setLang('ru')">Рус</button>
+    <button id="b-kk" onclick="setLang('kk')">Қаз</button>
+  </div>
+</header>
+
+<main>
+  <h1>
+    <span data-l="ru">Станьте тестировщиком Juma App</span>
+    <span data-l="kk">Juma App тестілеушісі болыңыз</span>
+  </h1>
+  <p class="lead">
+    <span data-l="ru">Чтобы выпустить приложение в Google Play для всех, нужно 12 тестировщиков на 14 дней. Это бесплатно. Нажимайте кнопки по порядку, на телефоне Android.</span>
+    <span data-l="kk">Қосымшаны Google Play-де барлығына шығару үшін 12 тестілеуші 14 күн қажет. Бұл тегін. Батырмаларды Android телефонында ретімен басыңыз.</span>
+  </p>
+
+  <div class="step">
+    <h2><span class="num">1</span>
+      <span data-l="ru">Вступите в группу</span>
+      <span data-l="kk">Топқа қосылыңыз</span>
+    </h2>
+    <p>
+      <span data-l="ru">Нажмите «Присоединиться к группе».</span>
+      <span data-l="kk">«Топқа қосылу» батырмасын басыңыз.</span>
+    </p>
+    <a class="btn" href="https://groups.google.com/g/jumaapp-testers" target="_blank" rel="noopener">
+      <span data-l="ru">1. Открыть группу</span>
+      <span data-l="kk">1. Топты ашу</span>
+    </a>
+  </div>
+
+  <div class="step">
+    <h2><span class="num">2</span>
+      <span data-l="ru">Станьте тестировщиком</span>
+      <span data-l="kk">Тестілеуші болыңыз</span>
+    </h2>
+    <p>
+      <span data-l="ru">Нажмите «Стать тестировщиком». Страница может быть на английском — это не страшно. «Покинуть программу» не нажимайте.</span>
+      <span data-l="kk">«Тестілеуші болу» батырмасын басыңыз. Бет ағылшынша болуы мүмкін — қорықпаңыз. «Бағдарламадан шығу» батырмасын баспаңыз.</span>
+    </p>
+    <a class="btn" id="step2" href="https://play.google.com/apps/testing/com.jumaapp.namaz?hl=ru" target="_blank" rel="noopener">
+      <span data-l="ru">2. Стать тестировщиком</span>
+      <span data-l="kk">2. Тестілеуші болу</span>
+    </a>
+  </div>
+
+  <div class="step">
+    <h2><span class="num">3</span>
+      <span data-l="ru">Установите приложение</span>
+      <span data-l="kk">Қосымшаны орнатыңыз</span>
+    </h2>
+    <p>
+      <span data-l="ru">Нажмите «Установить». Если кнопки нет — подождите несколько минут и обновите страницу.</span>
+      <span data-l="kk">«Орнату» батырмасын басыңыз. Батырма болмаса — бірнеше минут күтіп, бетті жаңартыңыз.</span>
+    </p>
+    <a class="btn" href="https://play.google.com/store/apps/details?id=com.jumaapp.namaz" target="_blank" rel="noopener">
+      <span data-l="ru">3. Установить</span>
+      <span data-l="kk">3. Орнату</span>
+    </a>
+  </div>
+
+  <div class="warn">
+    <p data-l="ru">⚠️ Входите с той же почтой Gmail, что и Google Play на телефоне.</p>
+    <p data-l="ru">⚠️ Пожалуйста, не удаляйте приложение 14 дней.</p>
+    <p data-l="kk">⚠️ Телефондағы Google Play тіркелген Gmail поштасымен кіріңіз.</p>
+    <p data-l="kk">⚠️ Қосымшаны он төрт күн өшірмеңіз.</p>
+  </div>
+
+  <p class="hadith">
+    <span data-l="ru">Пророк, мир ему, сказал: «Тот, кто указал на благое, получит такую же награду, как и совершивший его» (Муслим).</span>
+    <span data-l="kk">Пайғамбарымыз ﷺ: «Кім жақсылыққа нұсқаса, оған сол жақсылықты істегеннің сауабындай сауап бар», — деген (Муслим).</span>
+  </p>
+
+  <footer>
+    <p>
+      <span data-l="ru">Нашли ошибку? Напишите:</span>
+      <span data-l="kk">Қате таптыңыз ба? Жазыңыз:</span>
+      <a href="mailto:support@juma-app.com">support@juma-app.com</a>
+    </p>
+    <p><a href="https://juma-app.com/">juma-app.com</a></p>
+  </footer>
+</main>
+
+<script>
+  function setLang(l){
+    document.body.className = l;
+    document.documentElement.lang = l;
+    document.getElementById('b-ru').className = l === 'ru' ? 'on' : '';
+    document.getElementById('b-kk').className = l === 'kk' ? 'on' : '';
+    document.getElementById('step2').href =
+      'https://play.google.com/apps/testing/com.jumaapp.namaz?hl=' + l;
+    document.title = l === 'kk'
+      ? 'Тестілеуші болыңыз — Juma App'
+      : 'Станьте тестировщиком — Juma App';
+  }
+  (function(){
+    var q = new URLSearchParams(location.search).get('lang');
+    var nav = (navigator.language || '').toLowerCase();
+    if (q === 'kk' || q === 'kz' || (!q && nav.indexOf('kk') === 0)) setLang('kk');
+  })();
+</script>
+</body>
+</html>
